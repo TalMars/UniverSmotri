@@ -1,0 +1,2 @@
+C:\Users\TalMars\documents\visual studio 2015\Projects\UniverSmotri\RadioPlayer\RadioPlayer.csproj;x86
+C:\Users\TalMars\documents\visual studio 2015\Projects\UniverSmotri\UniverSmotri\UniverSmotri.csproj;x86

@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="UniverSmotri.NewsElement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniverSmotri"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Name="GridContent" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="0" Background="#0f4665">
+            <TextBlock Name="HeaderNews" Grid.Row="0" Foreground="White" VerticalAlignment="Center"
+                       TextAlignment="Center" FontSize="20" TextTrimming="CharacterEllipsis"
+                       TextWrapping="Wrap" />
+        </Grid>
+
+        <MediaPlayerElement Name="playerYouTube" Grid.Row="1" IsFullWindow="False" Background="Black"
+                           AutoPlay="False" Margin="0,0,0,0" AreTransportControlsEnabled="True"
+                           DoubleTapped="playerYouTube_DoubleTapped" Tapped="playerYouTube_Tapped" />
+
+        <TextBlock Name="DateNews" Grid.Row="2" Foreground="#FFBBBBBB" Margin="0,5,10,0" HorizontalAlignment="Right" FontSize="14" />
+        <ScrollViewer Grid.Row="3" VerticalScrollBarVisibility="Auto">
+            <TextBlock Name="DescrNews" Foreground="Black" Margin="10,5,10,10" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" FontSize="16" />
+        </ScrollViewer>
+    </Grid>
+</Page>
